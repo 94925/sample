@@ -1,0 +1,29 @@
+.extra{
+    flex: 1 1 auto;
+}
+.logo{
+    margin-left: 20px;
+}
+.help{
+    margin-left: 20px;
+}
+.sidenav {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+  }
+  mat-sidenav{
+width:180px;
+padding: 20px;
+  }
+  mat-sidenav-content{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-size: 20px;
+    height: 100%;
+  }
+  

@@ -1,0 +1,46 @@
+ /* .matColumnDef{
+    background-color: aqua;  */
+
+/* mat-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */ 
+
+.input{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    margin-top: 25px;
+    
+}
+/* for arrow color we have to use !important if it is not work use ::ng-deep */
+::ng-deep .mat-sort-header-arrow{
+    color: blue ;
+}
+table{
+    /* height: 100%; */
+    width: 80%;
+}
+/* By using ! important we can change the color if it is default material in angular */
+th{
+    background-color: rgb(205, 193, 193) !important;
+    color: #000;
+    font-size: 20px;
+}
+td{
+    font-size: 15px;
+    
+}
+.wrapper{
+    padding: 20px;
+}
+.mat-row{
+    height: 100%;
+}
+/* this is taken from console after click on tr row  it shows height 52px 
+we have to select and change the height then it occupies full page */
+.mdc-data-table__row {
+    height: 70px;
+}
+

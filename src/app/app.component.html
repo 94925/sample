@@ -1,0 +1,49 @@
+
+<mat-toolbar color="primary">
+    <button mat-icon-button (click)="nav.toggle()">
+  <mat-icon>menu</mat-icon></button>
+  <div class="logo">Logo</div>
+  <div class="help">Help</div>
+  <div class="extra"></div>
+  <!-- <mat-icon>share</mat-icon>
+  <mat-icon>phone</mat-icon> -->
+<a><button mat-button>Login</button></a>
+<a><button mat-button>Signin</button></a>
+<a><button mat-button>Logout</button></a>
+<!-- <a><button mat-button>Page</button></a> -->
+
+
+</mat-toolbar>
+<mat-sidenav-container class="sidenav" >
+    <mat-sidenav  #nav opened mode="side">
+        <a [routerLink]="['home']" color="primary">
+            <button mat-button>
+                <mat-icon>home</mat-icon>
+                <span>Home</span>
+            </button>
+        </a>
+        <a [routerLink]="['user']" color="primary">
+            <button mat-button>
+                <mat-icon>person</mat-icon>
+                <span>user</span>
+            </button>
+        </a>
+        <a [routerLink]="['about']" color="primary">
+            <button mat-button>
+                <mat-icon>info</mat-icon>
+                <span>About us</span>
+            </button>
+        </a>
+        <a [routerLink]="['material']" color="primary">
+            <button mat-button>
+                <mat-icon>book
+                </mat-icon>
+                <span>material</span>
+            </button>
+        </a>
+    </mat-sidenav>
+    <mat-sidenav-content> 
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
